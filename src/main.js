@@ -27,6 +27,15 @@ const productos = [
         localStorage.setItem('leprimCarrito', JSON.stringify(carrito));
     }
 
+    /**
+    * Formatea un número como moneda (ej: 490000 -> "490.000")
+    * @param {number} price - El precio a formatear
+    */
+    function formatPrice(price) {
+        // 'es-AR' usa el punto como separador de miles
+        return price.toLocaleString('es-AR');
+    }
+
 const start = () => {
     console.log("🚀 Ejecutando start()");
     const contenedor = document.querySelector('.contenedor')
@@ -118,7 +127,7 @@ const start = () => {
         titulo.className = 'font-bold text-2xl mt-2'
 
         const precio = document.createElement('p')
-        precio.textContent = `$${producto.precio}`
+        precio.textContent = `$${formatPrice(producto.precio)}`
         precio.className = 'p-4 text-xl font-semibold'
 
         const boton = document.createElement('button')
@@ -234,7 +243,7 @@ function renderizarCarrito() {
         <img src="${item.img}" alt="${nombreProducto}" class="w-20 h-20 object-cover rounded">
         <div class="flex-grow">
           <h3 class="font-semibold">${nombreProducto}</h3>
-          <p class="text-gray-600">$${item.precio}</p>
+          <p class="text-gray-600">$${formatPrice(item.precio)}</p>
           <div class="flex items-center gap-2 mt-2">
             <span>Cantidad:</span>
             <button class="btn-restar w-6 h-6 bg-gray-200 rounded hover:bg-gray-300">-</button>
@@ -249,7 +258,7 @@ function renderizarCarrito() {
   });
 
   // Actualizar total
-  cartTotalEl.textContent = `$${totalCalculado}`;
+  cartTotalEl.textContent = `$${formatPrice(totalCalculado)}`;
 
   // Añadir listeners a los botones de items (restar, sumar, eliminar)
   agregarListenersItemsCarrito();
