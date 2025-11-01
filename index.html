@@ -24,10 +24,11 @@
         </a>
         <a href="#productos" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
           Nuestros productos
+        </a>
         <a href="#contacto" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
           Contacto
         </a>
-        <a href="#" class="relative text-gray-600 hover:text-primary transition-colors p-2">
+        <a href="#" id="cart-icon-link" class="relative text-gray-600 hover:text-primary transition-colors p-2">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
             </path>
@@ -65,13 +66,37 @@
         </div>
       </section>
 
-      <!-- Sección de ejemplo debajo del hero -->
+
       <section id="productos" class="py-16 px-8 bg-white">
         <div class="max-w-6xl mx-auto text-center">
           <h2 class="text-3xl font-bold mb-4">Nuestros Productos destacados</h2>
           <section class="contenedor flex flex-wrap justify-center gap-6 p-4"></section>
         </div>
       </section>
+
+   <div id="cart-modal" 
+        class="hidden fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-lg flex flex-col z-50 transform transition-transform duration-300 ease-in-out">
+      
+      <div class="flex justify-between items-center p-4 border-b">
+        <h2 class="text-2xl font-bold">Tu Carrito</h2>
+        <button id="close-cart-btn" class="text-gray-600 hover:text-gray-900 text-2xl" aria-label="Cerrar carrito">&times;</button>
+      </div>
+      
+      <div id="cart-items-container" class="flex-grow p-4 overflow-y-auto">
+        <p id="cart-empty-msg" class="text-gray-500">Tu carrito está vacío.</p>
+      </div>
+      
+      <div class="p-4 border-t bg-gray-50">
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-xl font-bold">Total:</span>
+          <span id="cart-total" class="text-xl font-bold">$0</span>
+        </div>
+        <button class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+          Finalizar Compra
+        </button>
+      </div>
+    </div>
+
     </main>
 
     <footer>
@@ -120,7 +145,7 @@
             </div>
           </div>
 
-          <!-- Copyright -->
+
           <div class="text-center mt-6 pt-4 border-t border-gray-700">
             <p>&copy; 2024 Leprim. Todos los derechos reservados.</p>
           </div>
