@@ -18,7 +18,7 @@
     <header class="flex justify-between items-center p-6 shadow-sm bg-white h-14 fixed top-0 left-0 w-full z-50">
       <img src="/imgs/Logo.png" alt="Logo Leprim" class="h-10 ml-0">
 
-      <nav class="flex items-center gap-6">
+      <nav id="main-nav" class="hidden md:flex items-center gap-6">
         <a href="" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
           Inicio
         </a>
@@ -28,15 +28,36 @@
         <a href="#contacto" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
           Contacto
         </a>
+      </nav>
+      <div class="flex items-center gap-4">
         <a href="#" id="cart-icon-link" class="relative text-gray-600 hover:text-primary transition-colors p-2">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
             </path>
           </svg>
-          <!-- Badge con cantidad -->
           <span class="absolute -top-2 -right-2 mt-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-semibold">0</span>
         </a>
-      </nav>
+
+        <button id="hamburguesa-btn" class="md:hidden p-2 text-gray-600 hover:text-primary" aria-label="Abrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg fixed top-16 left-0 w-full z-40">
+        <nav class="flex flex-col p-4">
+          <a href="" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
+            Inicio
+          </a>
+          <a href="#productos" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
+            Nuestros productos
+          </a>
+          <a href="#contacto" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
+            Contacto
+          </a>
+        </nav>
+      </div>
     </header>
 
     <main class="pt-14">
@@ -52,10 +73,10 @@
         
         <!-- Contenido centrado -->
         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-          <h1 class="text-5xl md:text-7xl font-bold mb-6">
+          <h1 class="text-4xl sm:text-6xl md:text-7xl font-bold mb-6">
             Equipa tu Juego
           </h1>
-          <p class="text-xl md:text-2xl mb-8 max-w-2xl">
+          <p class="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl">
             Las mejores palas, accesorios y equipamiento para llevar tu pádel al siguiente nivel
           </p>
           <div class="flex flex-col sm:flex-row gap-4">

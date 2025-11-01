@@ -37,7 +37,23 @@ const productos = [
     }
 
 const start = () => {
-    console.log("🚀 Ejecutando start()");
+
+    const hamburgerBtn = document.getElementById('hamburguesa-btn')
+    const mobileMenu = document.getElementById('mobile-menu')
+    const mobileNavLinks = mobileMenu.querySelectorAll('.nav-link-mobile')
+
+    if (hamburgerBtn && mobileMenu) {
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden')
+        })
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden')
+            })
+        })
+    }
+
     const contenedor = document.querySelector('.contenedor')
 
     // Crear estructura del carrusel usando utilidades de Tailwind
