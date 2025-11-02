@@ -66,7 +66,39 @@
       </div>
     </header>
 
-    <main>
+    <main class="pt-16">
+
+      <div id="cart-modal" 
+        class="hidden fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-lg flex flex-col z-50 transform transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between items-center p-4 border-b">
+          <h2 class="text-2xl font-bold">Tu Carrito</h2>
+            <button id="close-cart-btn" class="text-gray-600 hover:text-gray-900 text-2xl" aria-label="Cerrar carrito">&times;</button>
+        </div>
+          
+        <div id="cart-items-container" class="flex-grow p-4 overflow-y-auto">
+        </div>
+          
+        <div class="p-4 border-t bg-gray-50">
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-xl font-bold">Total:</span>
+            <span id="cart-total" class="text-xl font-bold">$0</span>
+          </div>
+          <button class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+            Finalizar Compra
+          </button>
+        </div>
+      </div>
+      
+      <div id="filtro-marcas" class="flex gap-4 shadow bg-gray-400 text-white p-1">
+        <button data-marca="nox" class="cursor-pointer hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">Nox</button>
+        <button data-marca="bullpadel" class="cursor-pointer hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">Bullpadel</button>
+        <button data-marca="siux" class="cursor-pointer hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">Siux</button>
+        <button data-marca="babolat" class="cursor-pointer hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">Babolat</button>
+        <button data-marca="adidas" class="cursor-pointer hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">Adidas</button>
+      </div>
+      <section id="grid-palas" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+        
+      </section>
     </main>
 
     <footer>
@@ -125,5 +157,6 @@
 
 
     <script type="module" src="/src/main.js"></script>
+    <script type="module" src="/src/palas.js"></script>
   </body>
 </html>

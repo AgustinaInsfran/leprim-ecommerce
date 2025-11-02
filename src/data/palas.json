@@ -1,0 +1,423 @@
+[
+    {
+        "id": 1,
+        "nombre": "Nox Quantum Pro P.1",
+        "precio": 490000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/P1_ofhud4.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Nox Bahía",
+        "precio": 420000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760826760/P3_kys6bi.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Nox AT10 Luxury Genius",
+        "precio": 520000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762053698/paleta-nox-at10-luxury-genius-18k-alum-eva-by-agustin-tapia-1-6e5e270dd3dfe1597c17238969860973-640-0_ovoxve.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Nox Nerbo WPT",
+        "precio": 480000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762054298/Nox_Nerbo_WPT_mmbpdj.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Nox Tempo WPT",
+        "precio": 470000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762054298/Nox_Tempo_WPT_ofnnrb.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Nox X-One",
+        "precio": 440000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762054298/Nox_X-One_r1mumu.webp"
+    },
+    {
+        "id": 7,
+        "nombre": "Nox Equation WPT",
+        "precio": 510000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762054298/Nox_Equation_WPT_acyisi.webp"
+    },
+    {
+        "id": 8,
+        "nombre": "Nox ML Control Pro",
+        "precio": 460000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762054298/Nox_ML_Control_Pro_sbdgwm.jpg"
+    },
+    {
+        "id": 9,
+        "nombre": "Nox AT Genius Attack",
+        "precio": 500000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762054297/Nox_AT_Genius_Attack_jvdsdr.webp"
+    },
+    {
+        "id": 10,
+        "nombre": "Nox Luxury Power L6",
+        "precio": 485000,
+        "marca": "nox",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762054297/Nox_Luxury_Power_L6_sf7xmv.jpg"
+    },
+    {
+        "id": 11,
+        "nombre": "Babolat Technical Viper",
+        "precio": 490000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P7_rgxqpd.webp"
+    },
+    {
+        "id": 12,
+        "nombre": "Babolat Air Veron",
+        "precio": 250000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760830191/P8_ocijee.webp"
+    },
+    {
+        "id": 13,
+        "nombre": "Babolat Technical Veron",
+        "precio": 330000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059130/babolat-technical-veron_hvy2to.webp"
+    },
+    {
+        "id": 14,
+        "nombre": "Babolat Counter Veron",
+        "precio": 245000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P10_az8r90.webp"
+    },
+    {
+        "id": 15,
+        "nombre": "Babolat Counter Viper",
+        "precio": 465000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762055079/Babolat_Counter_Viper_ntisnc.webp"
+    },
+    {
+        "id": 16,
+        "nombre": "Babolat Technical Viper",
+        "precio": 525000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762055078/Babolat_Technical_Viper_b5wkfx.webp"
+    },
+    {
+        "id": 17,
+        "nombre": "Babolat Air Vertex",
+        "precio": 485000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762055078/Babolat_Air_Vertex_j4e3ck.jpg"
+    },
+    {
+        "id": 18,
+        "nombre": "Babolat Storm",
+        "precio": 200000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762055415/storm_ol8t5h.webp"
+    },
+    {
+        "id": 19,
+        "nombre": "Paleta Dyna Energy",
+        "precio": 380000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762055414/dyna-energy_mtshqx.webp"
+    },
+    {
+        "id": 20,
+        "nombre": "Paleta Dyna Spirit",
+        "precio": 290000,
+        "marca": "babolat",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762055414/dyna_spirit_g17laq.webp"
+    },
+    {
+        "id": 21,
+        "nombre": "Bullpadel Vertex 04",
+        "precio": 400000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P12_jk9etc.webp"
+    },
+    {
+        "id": 22,
+        "nombre": "Bullpadel Hack 04",
+        "precio": 420000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465540/P2_ob6gsv.webp"
+    },
+    {
+        "id": 23,
+        "nombre": "Pala onyx power 2.0",
+        "precio": 210000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762056567/onyx-power_w3tuib.webp"
+    },
+    {
+        "id": 24,
+        "nombre": "Pala Neuron TF 24",
+        "precio": 700000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762056566/neuron-tf_ge6mmy.webp"
+    },
+    {
+        "id": 25,
+        "nombre": "Bullpadel Vertex 05",
+        "precio": 700000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762056563/vertex-05_whxl9v.webp"
+    },
+    {
+        "id": 26,
+        "nombre": "Pala Flow Light Woman 25",
+        "precio": 350000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762056560/flow-ligth_k0lpbz.webp"
+    },
+    {
+        "id": 27,
+        "nombre": "Pala Onyx Control 2.0",
+        "precio": 180000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762056558/onyx-control_rlvuc3.webp"
+    },
+    {
+        "id": 28,
+        "nombre": "Pala ionic Light 25",
+        "precio": 460000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762056558/ionic-light_pprscn.webp"
+    },
+    {
+        "id": 29,
+        "nombre": "Bullpadel Vertex Onyx",
+        "precio": 390000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762056554/vertex-onyx_o0gd4l.webp"
+    },
+    {
+        "id": 30,
+        "nombre": "Pala Neuron Cloud 25",
+        "precio": 485000,
+        "marca": "bullpadel",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762056553/neuron-cloud_pt2rxc.webp"
+    },
+    {
+        "id": 31,
+        "nombre": "Siux Fenix Elite S",
+        "precio": 350000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827741/P6_kj1f2q.webp"
+    },
+    {
+        "id": 32,
+        "nombre": "Siux Diablo Revolution Pro 3",
+        "precio": 540000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P9_fklukm.webp"
+    },
+    {
+        "id": 33,
+        "nombre": "Siux Electra Stupa",
+        "precio": 440000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762057748/ElectraPro4.1.1_zo5lcd.webp"
+    },
+    {
+        "id": 34,
+        "nombre": "Siux Valkiria Elite",
+        "precio": 600000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762057746/ValkiriaElite.3.1_wkb2ov.webp"
+    },
+    {
+        "id": 35,
+        "nombre": "Siux Fenix Pro",
+        "precio": 475000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762057745/Fenix5ProNF.3.1_lvstfi.webp"
+    },
+    {
+        "id": 36,
+        "nombre": "Siux Spartan Revolution",
+        "precio": 400000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762057743/spartan-revolution_o8nc08.avif"
+    },
+    {
+        "id": 37,
+        "nombre": "Siux Triology Pro 5",
+        "precio": 480000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762057742/Trilogy5Pro-1_wo3eqs.webp"
+    },
+    {
+        "id": 38,
+        "nombre": "Siux Electra Go 4",
+        "precio": 380000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762057739/ElectraGo4.1.1_on8yor.webp"
+    },
+    {
+        "id": 39,
+        "nombre": "Siux Optimus 5 Air",
+        "precio": 290000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762057739/optimus-air_zcqpin.webp"
+    },
+    {
+        "id": 40,
+        "nombre": "Siux Fénix III",
+        "precio": 700000,
+        "marca": "siux",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762057738/siux-fenix-3_spt9gu.webp"
+    },
+    {
+        "id": 41,
+        "nombre": "Adidas Metalbone",
+        "precio": 400000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P11_z9h7ba.webp"
+    },
+    {
+        "id": 42,
+        "nombre": "Adidas Metalbone Light",
+        "precio": 420000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P13_qpapxa.webp"
+    },
+    {
+        "id": 43,
+        "nombre": "Adidas Carbon Control 3.4",
+        "precio": 510000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762058998/adidad-carbon-control_r6k469.webp"
+    },
+    {
+        "id": 44,
+        "nombre": "Adidas Adipower Carbon Light",
+        "precio": 530000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762058998/adidad-adipower_jgp8xx.webp"
+    },
+    {
+        "id": 45,
+        "nombre": "Adidas Cross It Light",
+        "precio": 595000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762058994/adidas-cross-it_odhtjq.webp"
+    },
+    {
+        "id": 46,
+        "nombre": "Adidas Metalbone HDR+",
+        "precio": 630000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762058990/adidad-metalbone-hdr_wn3jro.webp"
+    },
+    {
+        "id": 47,
+        "nombre": "Adidas Cross It Team 3.4",
+        "precio": 395000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762058870/adidas-cross-it-team_pr8ept.webp"
+    },
+    {
+        "id": 48,
+        "nombre": "Adidas Match Light",
+        "precio": 300000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762058820/adidas-match-light_zkjc2s.jpg"
+    },
+    {
+        "id": 49,
+        "nombre": "Adidas Faster Green",
+        "precio": 180000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762058819/faster_green_jm65hu.jpg"
+    },
+    {
+        "id": 50,
+        "nombre": "Adidas Metalbone 09",
+        "precio": 420000,
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762058819/adidad-metalbone-09_mmxjad.jpg"
+    },
+    {
+        "id": 51,
+        "nombre": "Wilson Bela Elite",
+        "precio": 480000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762060001/wilson-bela-elite_oplyo7.webp"
+    },
+    {
+        "id": 52,
+        "nombre": "Wilson Pro Staff Elite",
+        "precio": 320000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059997/wilson-pro-staff-elite_pgvorl.webp"
+    },
+    {
+        "id": 53,
+        "nombre": "Wilson Blade Pro",
+        "precio": 560000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059993/wilson-blade-pro_cgpkzl.webp"
+    },
+    {
+        "id": 54,
+        "nombre": "Wilson Bela Pro",
+        "precio": 500000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059996/wilson-bela-pro_behr22.webp"
+    },
+    {
+        "id": 55,
+        "nombre": "Wilson Bela LS",
+        "precio": 500000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059992/wilson-bela-ls_a0dxzf.webp"
+    },
+    {
+        "id": 56,
+        "nombre": "Wilson Defy Pro V1",
+        "precio": 535000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059990/wilson-defy-pro_fyp4mw.webp"
+    },
+    {
+        "id": 57,
+        "nombre": "Wilson Accent LT",
+        "precio": 390000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059988/wilson-accent-lt_qjocvj.webp"
+    },
+    {
+        "id": 58,
+        "nombre": "Wilson Carbon Force",
+        "precio": 370000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059985/wilson-carbon-force_lpbltb.webp"
+    },
+    {
+        "id": 59,
+        "nombre": "Wilson 22.26",
+        "precio": 180000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059984/wilson-22_wrliky.webp"
+    },
+    {
+        "id": 60,
+        "nombre": "Wilson Defy",
+        "precio": 450000,
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762059983/wilson-defy-v1_yuydc2.webp"
+    }
+]
+    

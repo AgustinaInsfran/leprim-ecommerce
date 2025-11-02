@@ -1,19 +1,18 @@
 import './style.css'
-console.log("✅ main.js cargado correctamente");
 const productos = [ 
     { id: 1, nombre: 'Nox Quantum', precio: 490000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/P1_ofhud4.webp'},
     { id: 2, nombre: 'Bullpadel Hack 04', precio: 420000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465540/P2_ob6gsv.webp'},
     { id: 3, nombre: 'Nox AT10 Genius 18K', precio: 690000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760826760/P3_kys6bi.jpg'},
-    { id: 4, nombre: 'Bullpadel Vertex 04', precio: 790000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760826761/P4_rsioxi.webp'},
+    { id: 4, nombre: 'Bullpadel Vertex', precio: 790000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760826761/P4_rsioxi.webp'},
     { id: 5, nombre: 'Nox AT2 Genius LTD', precio: 890000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827741/P5_ugwib5.webp'},
-    { id: 6, nombre: 'Siux Fenix Elite S', precio: 990000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827741/P6_kj1f2q.webp'},
-    { id: 7, nombre: 'Babolat Technical Viper', precio: 1090000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P7_rgxqpd.webp'},
-    { id: 8, nombre: 'Babolat Air Veron', precio: 1190000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760830191/P8_ocijee.webp'},
-    { id: 9, nombre: 'Siux Diablo Revolution Pro 3', precio: 1290000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P9_fklukm.webp'},
-    { id: 10, nombre: 'Babolat Counter Veron', precio: 1390000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P10_az8r90.webp'},
-    { id: 11, nombre: 'Adidas Metalbone', precio: 1490000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P11_z9h7ba.webp'},
-    { id: 12, nombre: 'Bullpadel Flow', precio: 1590000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P12_jk9etc.webp'},
-    { id: 13, nombre: 'Adidas Metalbone Team Light', precio: 1690000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P13_qpapxa.webp'},
+    { id: 6, nombre: 'Siux Fenix Elite S', precio: 350000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827741/P6_kj1f2q.webp'},
+    { id: 7, nombre: 'Babolat Technical Viper', precio: 490000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P7_rgxqpd.webp'},
+    { id: 8, nombre: 'Babolat Air Veron', precio: 250000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760830191/P8_ocijee.webp'},
+    { id: 9, nombre: 'Siux Diablo Revolution', precio: 540000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P9_fklukm.webp'},
+    { id: 10, nombre: 'Babolat Counter Veron', precio: 245000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P10_az8r90.webp'},
+    { id: 11, nombre: 'Adidas Metalbone', precio: 400000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P11_z9h7ba.webp'},
+    { id: 12, nombre: 'Bullpadel Vertex 04', precio: 400000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P12_jk9etc.webp'},
+    { id: 13, nombre: 'Adidas Metalbone Light', precio: 420000, img: 'https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760827742/P13_qpapxa.webp'},
 ]
 
 // Lógica del carrito 
@@ -31,7 +30,7 @@ const productos = [
     * Formatea un número como moneda (ej: 490000 -> "490.000")
     * @param {number} price - El precio a formatear
     */
-    function formatPrice(price) {
+    export function formatPrice(price) {
         // 'es-AR' usa el punto como separador de miles
         return price.toLocaleString('es-AR');
     }
@@ -56,79 +55,81 @@ const start = () => {
 
     const contenedor = document.querySelector('.contenedor')
 
-    // Crear estructura del carrusel usando utilidades de Tailwind
-    const carousel = document.createElement('div')
-    carousel.className = 'relative w-full flex items-center'
+    if (contenedor) {
+      // Crear estructura del carrusel usando utilidades de Tailwind
+      const carousel = document.createElement('div')
+      carousel.className = 'relative w-full flex items-center'
 
-    const track = document.createElement('div')
-   
-    track.className = 'flex gap-4 overflow-x-auto scroll-smooth p-3'
-    track.style.scrollBehavior = 'smooth'
-    track.style.webkitOverflowScrolling = 'touch'
-    track.style.scrollSnapType = 'x mandatory'
+      const track = document.createElement('div')
+    
+      track.className = 'flex gap-4 overflow-x-auto scroll-smooth p-3'
+      track.style.scrollBehavior = 'smooth'
+      track.style.webkitOverflowScrolling = 'touch'
+      track.style.scrollSnapType = 'x mandatory'
 
-    // Controles (botones) 
-    const prev = document.createElement('button')
-    prev.className = 'absolute left-2 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-2xl'
-    prev.setAttribute('aria-label', 'Anterior')
-    prev.textContent = '‹'
+      // Controles (botones) 
+      const prev = document.createElement('button')
+      prev.className = 'absolute left-2 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-2xl'
+      prev.setAttribute('aria-label', 'Anterior')
+      prev.textContent = '‹'
 
-    const next = document.createElement('button')
-    next.className = 'absolute right-2 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-2xl'
-    next.setAttribute('aria-label', 'Siguiente')
-    next.textContent = '›'
+      const next = document.createElement('button')
+      next.className = 'absolute right-2 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow flex items-center justify-center text-2xl'
+      next.setAttribute('aria-label', 'Siguiente')
+      next.textContent = '›'
 
-    carousel.appendChild(prev)
-    carousel.appendChild(track)
-    carousel.appendChild(next)
+      carousel.appendChild(prev)
+      carousel.appendChild(track)
+      carousel.appendChild(next)
 
-    contenedor.appendChild(carousel)
+      contenedor.appendChild(carousel)
 
-    // Lógica básica de navegación: scroll por anchura de item
-    const items = track.querySelectorAll('div')
-    const itemWidth = () => items[0] ? items[0].getBoundingClientRect().width : 0
+      // Lógica básica de navegación: scroll por anchura de item
+      const items = track.querySelectorAll('div')
+      const itemWidth = () => items[0] ? items[0].getBoundingClientRect().width : 0
 
-    prev.addEventListener('click', () => {
-        track.scrollBy({ left: -itemWidth() - 16, behavior: 'smooth' })
-    })
+      prev.addEventListener('click', () => {
+          track.scrollBy({ left: -itemWidth() - 16, behavior: 'smooth' })
+      })
 
-    next.addEventListener('click', () => {
-        track.scrollBy({ left: itemWidth() + 16, behavior: 'smooth' })
-    })
+      next.addEventListener('click', () => {
+          track.scrollBy({ left: itemWidth() + 16, behavior: 'smooth' })
+      })
 
-    // Habilitar arrastre con el pointer (mouse/touch)
-    let isDown = false
-    let startX
-    let scrollLeft
+      // Habilitar arrastre con el pointer (mouse/touch)
+      let isDown = false
+      let startX
+      let scrollLeft
 
-    track.addEventListener('pointerdown', (e) => {
-        if (e.target.tagName.toLowerCase() === 'button') {
-            return
-        }
-        isDown = true
-        startX = e.clientX
-        scrollLeft = track.scrollLeft
-        track.setPointerCapture && track.setPointerCapture(e.pointerId)
-    })
+      track.addEventListener('pointerdown', (e) => {
+          if (e.target.tagName.toLowerCase() === 'button') {
+              return
+          }
+          isDown = true
+          startX = e.clientX
+          scrollLeft = track.scrollLeft
+          track.setPointerCapture && track.setPointerCapture(e.pointerId)
+      })
 
-    track.addEventListener('pointermove', (e) => {
-        if (!isDown) return
-        e.preventDefault()
-        const x = e.clientX
-        const walk = (startX - x)
-        track.scrollLeft = scrollLeft + walk
-    })
+      track.addEventListener('pointermove', (e) => {
+          if (!isDown) return
+          e.preventDefault()
+          const x = e.clientX
+          const walk = (startX - x)
+          track.scrollLeft = scrollLeft + walk
+      })
 
-    track.addEventListener('pointerup', (e) => {
-        isDown = false
-        track.releasePointerCapture && track.releasePointerCapture(e.pointerId)
-    })
+      track.addEventListener('pointerup', (e) => {
+          isDown = false
+          track.releasePointerCapture && track.releasePointerCapture(e.pointerId)
+      })
 
-    track.addEventListener('pointerleave', () => {
-        isDown = false
-    })
+      track.addEventListener('pointerleave', () => {
+          isDown = false
+      })
 
-        productos.forEach(producto => {
+      productos.forEach(producto => {
+
         const item = document.createElement('div')
         item.className = 'flex-shrink-0 w-72 bg-white rounded-lg shadow-md overflow-hidden flex flex-col hover:scale-105 duration-300'
         item.style.scrollSnapAlign = 'center'
@@ -151,7 +152,6 @@ const start = () => {
         boton.className = 'm-4 py-2 px-4 bg-blue-600 text-white rounded-lg hover:bg-blue-800, cursor-pointer'
 
         boton.addEventListener('click', () => {
-            console.log('Hiciste clic!');
             agregarAlCarrito(producto)
         })
 
@@ -161,7 +161,9 @@ const start = () => {
         item.appendChild(boton)
 
         track.appendChild(item)
-    })
+      })
+
+    }
 
     // Carrito
 
@@ -170,8 +172,6 @@ const start = () => {
     closeCartBtn = document.getElementById('close-cart-btn');
     cartItemsContainer = document.getElementById('cart-items-container');
     cartTotalEl = document.getElementById('cart-total');        
-    cartEmptyMsg = document.getElementById('cart-empty-msg');
-     
     cartIcon = document.getElementById('cart-icon-link')
     cartCounterEl = cartIcon.querySelector('span')
 
@@ -205,7 +205,7 @@ const start = () => {
  * Agrega un producto al carrito
  * @param {object} producto - El objeto del producto a agregar
  */
-function agregarAlCarrito(producto) {
+export function agregarAlCarrito(producto) {
   // Comprobar si el producto ya está en el carrito
   const itemEnCarrito = carrito.find(item => item.id === producto.id);
 
@@ -241,9 +241,7 @@ function renderizarCarrito() {
   cartItemsContainer.innerHTML = ''; 
 
   if (carrito.length === 0) {
-    cartEmptyMsg.style.display = 'block'; // Mostrar mensaje de vacío
-  } else {
-    cartEmptyMsg.style.display = 'none'; // Ocultar mensaje de vacío
+    cartItemsContainer.innerHTML = '<p class="text-gray-500">Tu carrito está vacío.</p>';
   }
 
   let totalCalculado = 0;
