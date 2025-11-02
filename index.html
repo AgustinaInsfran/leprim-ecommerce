@@ -25,6 +25,9 @@
         <a href="#productos" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
           Nuestros productos
         </a>
+        <a href="#categoria" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
+          Categorías
+        </a>
         <a href="#contacto" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
           Contacto
         </a>
@@ -52,6 +55,9 @@
           </a>
           <a href="#productos" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
             Nuestros productos
+          </a>
+          <a href="#categoria" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
+            Categorías
           </a>
           <a href="#contacto" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
             Contacto
@@ -88,36 +94,106 @@
       </section>
 
 
-      <section id="productos" class="py-16 px-8 bg-white">
+      <section id="productos" class="py-10 px-8 bg-white">
         <div class="max-w-6xl mx-auto text-center">
-          <h2 class="text-3xl font-bold mb-4">Nuestros Productos destacados</h2>
+          <h2 class="text-3xl font-bold mb-4 p-4">Nuestros Productos destacados</h2>
           <section class="contenedor flex flex-wrap justify-center gap-6 p-4"></section>
         </div>
       </section>
 
-   <div id="cart-modal" 
+      <div id="cart-modal" 
         class="hidden fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-lg flex flex-col z-50 transform transition-transform duration-300 ease-in-out">
-      
-      <div class="flex justify-between items-center p-4 border-b">
-        <h2 class="text-2xl font-bold">Tu Carrito</h2>
-        <button id="close-cart-btn" class="text-gray-600 hover:text-gray-900 text-2xl" aria-label="Cerrar carrito">&times;</button>
-      </div>
-      
-      <div id="cart-items-container" class="flex-grow p-4 overflow-y-auto">
-        <p id="cart-empty-msg" class="text-gray-500">Tu carrito está vacío.</p>
-      </div>
-      
-      <div class="p-4 border-t bg-gray-50">
-        <div class="flex justify-between items-center mb-4">
-          <span class="text-xl font-bold">Total:</span>
-          <span id="cart-total" class="text-xl font-bold">$0</span>
+        <div class="flex justify-between items-center p-4 border-b">
+          <h2 class="text-2xl font-bold">Tu Carrito</h2>
+            <button id="close-cart-btn" class="text-gray-600 hover:text-gray-900 text-2xl" aria-label="Cerrar carrito">&times;</button>
         </div>
-        <button class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
-          Finalizar Compra
-        </button>
+          
+        <div id="cart-items-container" class="flex-grow p-4 overflow-y-auto">
+          <p id="cart-empty-msg" class="text-gray-500">Tu carrito está vacío.</p>
+        </div>
+          
+        <div class="p-4 border-t bg-gray-50">
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-xl font-bold">Total:</span>
+            <span id="cart-total" class="text-xl font-bold">$0</span>
+          </div>
+          <button class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+            Finalizar Compra
+          </button>
+        </div>
       </div>
-    </div>
 
+      <section id="categoria" class="py-10 px-8">
+        <div class="max-w-6xl mx-auto text-center">
+          <h2 class="text-3xl font-bold mb-8 p-4">Explorá nuestras Categorías</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- ? CATEGORÍA PALAS   -->
+            <a href="./src/pages/palas.html" class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 text-left">
+              <div class="relative h-56 w-full overflow-hidden">
+                <img src="https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762042207/raqueta-tenis-padel-fondo-espacio-copia-pista-deportiva-bolas_881647-1058_ykwwjb.avif" alt="Pala" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+              </div>
+
+              <div class="p-6 text-center">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Palas</h3>
+                <p class="text-gray-600 text-sm mb-4">Descubrí toda nuestra colección de paletas profesionales</p>
+                <div class="rounded-full w-32 inline-block hover:bg-primary transition-all duration-300">
+                  <span class="font-semibold text-primary hover:text-white">
+                  Ver todas &rarr;
+                  </span>
+                </div>
+              </div>
+            </a>
+            <!-- ? CATEGORÍA ROPA   -->
+            <a href="./src/pages/ropa.html" class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 text-left">
+              <div class="relative h-56 w-full overflow-hidden">
+                <img src="https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762042594/download_vvupea.jpg" alt="Ropa de pádel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+              </div>
+
+              <div class="p-6 text-center">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Vestimenta</h3>
+                <p class="text-gray-600 text-sm mb-4">Equipate con la mejor indumentaria técnica y de estilo</p>
+                <div class="rounded-full w-32 inline-block hover:bg-green-600 transition-all duration-300">
+                  <span class="font-semibold text-primary hover:text-white">
+                  Ver todas &rarr;
+                  </span>
+                </div>
+              </div>
+            </a>
+            <!-- ? CATEGORÍA ZAPATILLAS   -->
+            <a href="./src/pages/zapatillas.html" class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 text-left">
+              <div class="relative h-56 w-full overflow-hidden">
+                <img src="https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762042547/zapatillas_padel_mujer_2048x_a8dbie.webp" alt="Zapatillas de pádel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+              </div>
+
+              <div class="p-6 text-center">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Zapatillas</h3>
+                <p class="text-gray-600 text-sm mb-4">Pisá fuerte en la cancha con calzado especializado</p>
+                <div class="rounded-full w-32 inline-block hover:bg-green-600 transition-all duration-300">
+                  <span class="font-semibold text-primary hover:text-white">
+                  Ver todas &rarr;
+                  </span>
+                </div>
+              </div>
+            </a>
+            <!-- ? CATEGORÍA ACCESORIOS   -->
+            <a href="./src/pages/accesorios.html" class="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 text-left">
+              <div class="relative h-56 w-full overflow-hidden">
+                <img src="https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762042316/anti-transpirant-padel_lwcpxi.jpg" alt="Accesorios de pádel" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+              </div>
+
+              <div class="p-6 text-center">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-2">Accesorios</h3>
+                <p class="text-gray-600 text-sm mb-4">Overgrips, tubos de pelotas y más</p>
+                <div class="rounded-full w-32 inline-block hover:bg-primary transition-all duration-300">
+                  <span class="font-semibold text-primary hover:text-white">
+                  Ver todas &rarr;
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
