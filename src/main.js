@@ -186,20 +186,117 @@ const start = () => {
         cartModal.classList.add('hidden')
     })
 
-    // Cerrar si se hace clic fuera (en el fondo oscuro)
+    // Cerrar si se hace clic fuera
     cartModal.addEventListener('click', (e) => {
       if (e.target === cartModal) {
         cartModal.classList.add('hidden');
       }
     });
 
-    // 3. Modificar el bucle 'forEach' de productos
-
-
     actualizarContadorCarrito()
-}
 
-// --- NUEVAS FUNCIONES DEL CARRITO ---
+
+        // * Finalizar compra
+
+    const checkoutModal = document.getElementById('checkout-modal');
+    const checkoutForm = document.getElementById('checkout-form');
+    const btnFinalizarCompra = document.getElementById('btn-finalizar-compra'); // El del carrito
+    const btnCancelarCheckout = document.getElementById('btn-cancelar-checkout'); 
+    const btnConfirmarPedido = document.getElementById('btn-confirmar-pedido'); 
+
+    // ---  PASO 1: Abrir el modal de checkout ---
+    if (btnFinalizarCompra) {
+      btnFinalizarCompra.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // No enviar el pedido, solo abrir el nuevo modal
+        if (carrito.length === 0) {
+          alert("Tu carrito está vacío.");
+          return;
+        }
+        
+        // Ocultar modal de carrito y mostrar modal de checkout
+        cartModal.classList.add('hidden');
+        checkoutModal.classList.remove('hidden');
+      });
+    }
+
+    // --- PASO 2: Cancelar el checkout ---
+    if (btnCancelarCheckout) {
+      btnCancelarCheckout.addEventListener('click', () => {
+        checkoutModal.classList.add('hidden');
+      });
+    }
+
+ // --- LÓGICA PASO 3: Confirmar y Enviar el Email ---
+    if (btnConfirmarPedido && checkoutForm) {
+      btnConfirmarPedido.addEventListener('click', (e) => {
+        // Prevenimos que el botón intente enviar el formulario por defecto
+        e.preventDefault(); 
+        
+        // --- Validación Manual ---
+        // Como no usamos el 'submit', debemos validar el formulario a mano
+        if (!checkoutForm.checkValidity()) {
+          // Si el formulario no es válido (ej. campos vacíos),
+          // le pedimos al navegador que muestre los errores
+          checkoutForm.reportValidity();
+          return; // No continuamos
+        }
+        
+        // Formulario válido
+        
+        // 1. Obtenemos los datos del formulario
+        const empresa = document.getElementById('checkout-empresa').value;
+        const formaPago = document.getElementById('checkout-pago').value;
+        
+        // 2. Preparamos los datos de la plantilla
+        let totalCalculado = 0;
+        
+        // 3. Creamos el array de "orders" que la plantilla espera
+        const itemsParaEmail = carrito.map(item => {
+          const itemTotal = item.precio * item.cantidad;
+          totalCalculado += itemTotal;
+          
+          return {
+            name: item.nombre || `Producto ${item.id}`,
+            units: item.cantidad,
+            price: formatPrice(itemTotal) 
+          }
+        });
+
+        // 4. Creamos el objeto final de parámetros 
+        const templateParams = {
+          order_id: Math.floor(Math.random() * 100000), 
+          orders: itemsParaEmail,
+          "cost.total": formatPrice(totalCalculado),
+          empresa: empresa,
+          formaPago: formaPago,
+          email: "no-reply@leprim.com"
+        };
+        
+        console.log("Enviando pedido a EmailJS:", templateParams);
+
+        // 5. Llamar a EmailJS 
+        emailjs.send('service_l40a1gg', 'template_aldnxjs', templateParams)
+            .then(response => {
+               console.log('ÉXITO!', response.status, response.text);
+               alert('¡Pedido recibido! Gracias por tu compra.');
+               
+               // Limpiar todo
+               checkoutModal.classList.add('hidden');
+               checkoutForm.reset(); 
+               carrito = [];
+               guardarCarrito();
+               renderizarCarrito();
+               actualizarContadorCarrito();
+               
+            }, err => {
+               console.log('FALLÓ...', err);
+               alert('Hubo un error al enviar tu pedido. Por favor, intenta de nuevo.');
+            });
+      });
+    }
+}
 
 /**
  * Agrega un producto al carrito

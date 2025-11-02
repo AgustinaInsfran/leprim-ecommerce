@@ -1,0 +1,282 @@
+[
+    {
+        "id": 1,
+        "nombre": "Medias Adidas Blanca 1",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R1_ofhud4.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Medias Adidas Negra 2",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R2_ofhud4.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "Medias Adidas Team 3",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R3_ofhud4.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Medias Adidas Performance 4",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R4_ofhud4.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Medias Adidas Running 5",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R5_ofhud4.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Medias Wilson Blanca 1",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R6_ofhud4.webp"
+    },
+    {
+        "id": 7,
+        "nombre": "Medias Wilson Negra 2",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R7_ofhud4.webp"
+    },
+    {
+        "id": 8,
+        "nombre": "Medias Wilson Team 3",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R8_ofhud4.webp"
+    },
+    {
+        "id": 9,
+        "nombre": "Medias Wilson Performance 4",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R9_ofhud4.webp"
+    },
+    {
+        "id": 10,
+        "nombre": "Medias Wilson Running 5",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R10_ofhud4.webp"
+    },
+    {
+        "id": 11,
+        "nombre": "Medias Nike Blanca 1",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "nike",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R11_ofhud4.webp"
+    },
+    {
+        "id": 12,
+        "nombre": "Medias Nike Negra 2",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "nike",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R12_ofhud4.webp"
+    },
+    {
+        "id": 13,
+        "nombre": "Medias Nike Team 3",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "nike",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R13_ofhud4.webp"
+    },
+    {
+        "id": 14,
+        "nombre": "Medias Nike Performance 4",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "nike",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R14_ofhud4.webp"
+    },
+    {
+        "id": 15,
+        "nombre": "Medias Nike Running 5",
+        "precio": 15000,
+        "categoria": "medias",
+        "marca": "nike",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R15_ofhud4.webp"
+    },
+    {
+        "id": 16,
+        "nombre": "Remera Dropshot Classic 1",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R16_ofhud4.webp"
+    },
+    {
+        "id": 17,
+        "nombre": "Remera Dropshot Classic 2",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R17_ofhud4.webp"
+    },
+    {
+        "id": 18,
+        "nombre": "Remera Dropshot Team 3",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R18_ofhud4.webp"
+    },
+    {
+        "id": 19,
+        "nombre": "Remera Dropshot Dry 4",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R19_ofhud4.webp"
+    },
+    {
+        "id": 20,
+        "nombre": "Remera Dropshot Dry 5",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R20_ofhud4.webp"
+    },
+    {
+        "id": 21,
+        "nombre": "Remera Dropshot Urban 6",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R21_ofhud4.webp"
+    },
+    {
+        "id": 22,
+        "nombre": "Remera Dropshot Urban 7",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R22_ofhud4.webp"
+    },
+    {
+        "id": 23,
+        "nombre": "Remera Dropshot Match 8",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R23_ofhud4.webp"
+    },
+    {
+        "id": 24,
+        "nombre": "Remera Dropshot Match 9",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R24_ofhud4.webp"
+    },
+    {
+        "id": 25,
+        "nombre": "Remera Dropshot Performance 10",
+        "precio": 35000,
+        "categoria": "remeras",
+        "marca": "dropshot",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R25_ofhud4.webp"
+    },
+    {
+        "id": 26,
+        "nombre": "Shorts Adidas Court 1",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R26_ofhud4.webp"
+    },
+    {
+        "id": 27,
+        "nombre": "Shorts Adidas Court 2",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R27_ofhud4.webp"
+    },
+    {
+        "id": 28,
+        "nombre": "Shorts Adidas Classic 3",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R28_ofhud4.webp"
+    },
+    {
+        "id": 29,
+        "nombre": "Shorts Adidas Running 4",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "adidas",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R29_ofhud4.webp"
+    },
+    {
+        "id": 30,
+        "nombre": "Shorts Wilson Game 5",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R30_ofhud4.webp"
+    },
+    {
+        "id": 31,
+        "nombre": "Shorts Wilson Pro 6",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R31_ofhud4.webp"
+    },
+    {
+        "id": 32,
+        "nombre": "Shorts Wilson Training 7",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "wilson",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R32_ofhud4.webp"
+    },
+    {
+        "id": 33,
+        "nombre": "Shorts Nike Flex 8",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "nike",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R33_ofhud4.webp"
+    },
+    {
+        "id": 34,
+        "nombre": "Shorts Nike Dri-Fit 9",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "nike",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R34_ofhud4.webp"
+    },
+    {
+        "id": 35,
+        "nombre": "Shorts Nike Run 10",
+        "precio": 30000,
+        "categoria": "shorts",
+        "marca": "nike",
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1760465509/R35_ofhud4.webp"
+    }
+]
