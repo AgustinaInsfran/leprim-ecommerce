@@ -6,19 +6,16 @@ import { fileURLToPath } from 'url'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-  ],
-  root: '.', 
+  plugins: [tailwindcss()],
   build: {
     outDir: 'dist',
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        palas: resolve(__dirname, 'palas.html'),
-        ropa: resolve(__dirname, 'ropa.html'),
-        accesorios: resolve(__dirname, 'accesorios.html'),
-        zapatillas: resolve(__dirname, 'zapatillas.html'),
+        palas: resolve(__dirname, 'src/pages/palas.html'),
+        ropa: resolve(__dirname, 'src/pages/ropa.html'),
+        accesorios: resolve(__dirname, 'src/pages/accesorios.html'),
+        zapatillas: resolve(__dirname, 'src/pages/zapatillas.html'),
       },
     },
   },
