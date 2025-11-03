@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>leprim</title>
+    <title>Leprim Pádel</title>
     <style>
       body {
         opacity: 0;
@@ -15,7 +15,7 @@
     </style>
   </head>
   <body>
-    <header class="flex justify-between items-center p-6 shadow-sm bg-white h-14 fixed top-0 left-0 w-full z-50">
+    <header class="flex justify-between items-center p-6 shadow-sm bg-white h-14 fixed top-0 left-0 w-full z-30">
       <img src="/imgs/Logo.png" alt="Logo Leprim" class="h-10 ml-0">
 
       <nav id="main-nav" class="hidden md:flex items-center gap-6">
@@ -48,7 +48,7 @@
         </button>
       </div>
 
-      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg fixed top-16 left-0 w-full z-40">
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg fixed top-16 left-0 w-full z-20">
         <nav class="flex flex-col p-4">
           <a href="" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
             Inicio
@@ -71,7 +71,7 @@
       <section class="relative h-screen w-full overflow-hidden">
         <!-- Imagen de fondo -->
         <div class="absolute inset-0">
-          <img src="public/imgs/padel-bg.jpg" alt="Fondo de pádel" class="w-full h-full object-cover">
+          <img src="/imgs/padel-bg.jpg" alt="Fondo de pádel" class="w-full h-full object-cover">
         </div>
         
         <!-- Overlay oscuro para mejorar legibilidad del texto -->
@@ -195,7 +195,7 @@
       </section>
 
 
-      <div id="checkout-modal" class="hidden fixed inset-0 bg-opacity-70 z-50 flex items-center justify-center p-4">
+      <div id="checkout-modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
         <div class="bg-white w-full max-w-md rounded-lg shadow-lg flex flex-col overflow-hidden">
           <div class="flex justify-between items-center p-4 border-b">
             <h2 class="text-2xl font-bold">Completar Pedido</h2>
@@ -214,20 +214,39 @@
                 <option value="">Selecciona una opción...</option>
                 <option value="Efectivo">Efectivo</option>
                 <option value="Transferencia">Transferencia</option>
-                <option value="Tarjeta de Crédito">Tarjeta de Crédito</option>
+                <option value="Tarjeta de Crédito">A Crédito</option>
               </select>
             </div>
 
-            <div class="pt-4">
-              <button id="btn-confirmar-pedido" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
-                Confirmar y Enviar Pedido
-              </button>
+            <div>
+              <p class="text-red-600 italic">*10% de descuento en Efectivo o Transferencia</p>
             </div>
 
+            <div class="pt-4 flex gap-2">
+              <button id="btn-confirmar-pedido" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+                Enviar Pedido
+              </button>
+              <button type="button" id="btn-cancelar-pedido" class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-all">
+                Cancelar Pedido
+              </button>
+            </div>
           </form>
         </div>
       </div>
       
+      <div id="success-modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center max-w-sm w-full">
+          <svg class="w-16 h-16 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <h2 class="text-2xl font-bold mb-2">¡Pedido Recibido!</h2>
+          <p class="text-gray-600 mb-6">Gracias por tu compra</p>
+          
+          <button id="btn-cerrar-success" class="bg-primary text-white py-2 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+            Cerrar
+          </button>
+        </div>
+      </div>
     </main>
 
     <footer>

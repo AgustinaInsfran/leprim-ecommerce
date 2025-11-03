@@ -202,7 +202,10 @@ const start = () => {
     const checkoutForm = document.getElementById('checkout-form');
     const btnFinalizarCompra = document.getElementById('btn-finalizar-compra'); // El del carrito
     const btnCancelarCheckout = document.getElementById('btn-cancelar-checkout'); 
+    const btnCancelarPedido = document.getElementById("btn-cancelar-pedido")
     const btnConfirmarPedido = document.getElementById('btn-confirmar-pedido'); 
+    const successModal = document.getElementById('success-modal');
+    const btnCerrarSuccess = document.getElementById('btn-cerrar-success');
 
     // ---  PASO 1: Abrir el modal de checkout ---
     if (btnFinalizarCompra) {
@@ -221,7 +224,13 @@ const start = () => {
       });
     }
 
-    // --- PASO 2: Cancelar el checkout ---
+    // --- PASO 2: Cancelar el checkout y el pedido ---
+    if (btnCancelarPedido) {
+      btnCancelarPedido.addEventListener('click', () => {
+        checkoutModal.classList.add('hidden');
+      })
+    }
+
     if (btnCancelarCheckout) {
       btnCancelarCheckout.addEventListener('click', () => {
         checkoutModal.classList.add('hidden');
@@ -268,7 +277,7 @@ const start = () => {
         const templateParams = {
           order_id: Math.floor(Math.random() * 100000), 
           orders: itemsParaEmail,
-          "cost.total": formatPrice(totalCalculado),
+          cost_total: formatPrice(totalCalculado),
           empresa: empresa,
           formaPago: formaPago,
           email: "no-reply@leprim.com"
@@ -279,8 +288,7 @@ const start = () => {
         // 5. Llamar a EmailJS 
         emailjs.send('service_l40a1gg', 'template_aldnxjs', templateParams)
             .then(response => {
-               console.log('ÉXITO!', response.status, response.text);
-               alert('¡Pedido recibido! Gracias por tu compra.');
+               console.log('ÉXITO!', response.status, response.text)
                
                // Limpiar todo
                checkoutModal.classList.add('hidden');
@@ -290,10 +298,17 @@ const start = () => {
                renderizarCarrito();
                actualizarContadorCarrito();
                
+               successModal.classList.remove('hidden')
             }, err => {
                console.log('FALLÓ...', err);
                alert('Hubo un error al enviar tu pedido. Por favor, intenta de nuevo.');
             });
+      });
+    }
+
+    if (btnCerrarSuccess) {
+      btnCerrarSuccess.addEventListener('click', () => {
+        successModal.classList.add('hidden');
       });
     }
 }
