@@ -1,49 +1,50 @@
 # 🛒 Leprim – E-commerce de Pádel
 
-**Leprim** es un sitio web de e-commerce ficticio dedicado a la venta de productos relacionados con el pádel. El proyecto fue creado como práctica académica para un grupo de estudiantes de secundaria y se encuentra en crecimiento con nuevas funcionalidades.
+**Leprim** es un sitio web de e-commerce ficticio dedicado a la venta de productos relacionados con el pádel.  
+El proyecto fue desarrollado como práctica académica y cuenta con funcionalidades completas de navegación, carrito y confirmación de compra mediante correo electrónico.
 
 ---
 
 ## ✅ Funcionalidades actuales
-- Página de inicio con diseño moderno
-- Barra de navegación responsive
-- Carrusel dinámico de productos destacados
-- Estructura base del catálogo
-- Footer informativo
-- Integración con Tailwind CSS para estilos rápidos y reutilizables
-
----
-
-## 🚧 En desarrollo
-- Sección de **categorías** (Palas, Ropa, Accesorios)
-- **Filtro por marcas** de palas
-- Componentizado del JavaScript para mayor escalabilidad
-- Mejoras de UI/UX en navegación y estructura responsive
+- Página de inicio moderna y funcional  
+- Barra de navegación responsive adaptable a todos los dispositivos  
+- Catálogo de productos con categorías: Palas, Ropa, Accesorios y Zapatillas
+- Filtros por marca y categoría
+- 🛒 Carrito de compras completamente funcional (agregar, eliminar, modificar cantidades)  
+- 💾 Persistencia de productos mediante **LocalStorage**  
+- 📧 Envío de confirmaciones de compra con **EmailJS**  
+- 📱 Diseño totalmente **responsive**  
+- Integración con **Tailwind CSS** para estilos rápidos y reutilizables  
+- Configuración optimizada con **Vite** para desarrollo y build
 
 ---
 
 ## 🔜 Próximas mejoras
-- 🛒 Carrito funcional (agregar, eliminar y modificar cantidades)
-- 💾 Persistencia del carrito con LocalStorage
-- 🔍 Página de detalle para cada producto
-- 📱 Adaptación completa a mobile 
+- Ajustes visuales menores para mejorar aún más la experiencia responsive
+- Implementar el proyecto en **React** para una mejor escalabilidad  
+- Añadir un **backend real** para manejo de productos y pedidos  
+- Incorporar **métodos de pago simulados**  
+- Mejoras generales de rendimiento y accesibilidad
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 | Tecnología | Uso |
-|------------|-----|
-| HTML5 | Estructura del proyecto |
-| Tailwind CSS | Diseño y estilos responsive |
-| JavaScript | Lógica e interactividad |
-| Git & GitHub | Control de versiones |
-| GitHub Pages | Deploy del proyecto (próximamente) |
+|-------------|-----|
+| **HTML5** | Estructura del proyecto |
+| **Tailwind CSS** | Diseño y estilos responsive |
+| **JavaScript (Vanilla)** | Lógica e interactividad |
+| **LocalStorage** | Persistencia del carrito |
+| **EmailJS** | Envío de correos de confirmación |
+| **Vite** | Bundler y entorno de desarrollo |
+| **Git & GitHub** | Control de versiones |
+| **Netlify** | Deploy del sitio web |
 
 ---
 
 ## 🚀 Deploy
-El sitio será publicado próximamente con **GitHub Pages**.  
-🔗 URL del sitio: _próximamente_
+El sitio se encuentra publicado en **Netlify**.  
+🔗 URL del sitio: [leprim.netlify.app](https://leprim.netlify.app) 
 
 ---
 
@@ -51,3 +52,10 @@ El sitio será publicado próximamente con **GitHub Pages**.
 ```bash
 git clone https://github.com/tu-usuario/leprim-ecommerce.git
 cd leprim-ecommerce
+npm install
+npm run dev
+
+---
+
+## 👥 Autor/a
+  ✨ Agustina Insfran
