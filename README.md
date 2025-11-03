@@ -54,7 +54,7 @@ git clone https://github.com/tu-usuario/leprim-ecommerce.git
 cd leprim-ecommerce
 npm install
 npm run dev
-
+```
 ---
 
 ## 👥 Autor/a
