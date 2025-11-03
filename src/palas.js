@@ -23,7 +23,7 @@ const startPalas = () => {
 
         const titulo = document.createElement('h2')
         titulo.textContent = `${pala.nombre}`
-        titulo.className = 'font-bold text-2xl mt-2'
+        titulo.className = 'font-bold text-xl mt-2'
 
         const precio = document.createElement('p')
         precio.textContent = `$${formatPrice(pala.precio)}`

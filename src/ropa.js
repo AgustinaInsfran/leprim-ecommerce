@@ -18,11 +18,11 @@ const startRopa = () => {
         const urlTransformada = ropa.img.replace('/upload/', `/upload/${transformacion}/`)
         imagen.src = urlTransformada
         imagen.alt = ropa.nombre || `Vestimenta ${ropa.id}`
-        imagen.className = 'w-full h-60 object-contains'
+        imagen.className = 'w-full h-64 object-contains'
 
         const titulo = document.createElement('h2')
         titulo.textContent = `${ropa.nombre}`
-        titulo.className = 'font-bold text-2xl mt-2'
+        titulo.className = 'font-bold text-xl mt-2'
 
         const precio = document.createElement('p')
         precio.textContent = `$${formatPrice(ropa.precio)}`

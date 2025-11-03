@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "Overgrip Madma Pro",
+        "precio": 7400,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762135565/accesorio1_axksjh.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Overgrip Bullpadel Liso",
+        "precio": 5000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762135564/accesorio2_y9hqp3.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Overgrip Adidas Microperforado",
+        "precio": 6000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762135563/accesorio3_ybsxnl.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Tubo de Pelotas Wilson Premier Pádel Speed x3",
+        "precio": 16000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762135562/accesorio4_ndg4wu.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Tubo de Pelotas Bullpadel Tournament Pro x2",
+        "precio": 9500,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762135288/accesorio5_yzs5fu.jpg"
+    },
+    {
+        "id": 6,
+        "nombre": "Tubo de Pelotas Nox Pro Titanium x3",
+        "precio": 15200,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762135288/accesorio6_arvgo7.jpg"
+    },
+    {
+        "id": 7,
+        "nombre": "Tubo de Pelotas Adidas Speed RX x3",
+        "precio": 19000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762135276/accesorio7_rruawl.jpg"
+    },
+    {
+        "id": 8,
+        "nombre": "Tubo de Pelotas Bullpadel Premium Pro x3",
+        "precio": 16900,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762135246/accesorio8_wxeuwm.jpg"
+    }
+]

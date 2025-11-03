@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Zapatilla Drop Shot NEKO-G XT 22",
+        "precio": 163000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762132858/zapa1_v1xuh2.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Zapatilla Drop Shot NEKO-B XT 22",
+        "precio": 163000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762132857/zapa2_avqh2e.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "Zapatilla Drop Shot VIRTUO-Y XT 22",
+        "precio": 200000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762132856/zapa3_xm8bzf.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Zapatilla Drop Shot DEVIL XT GRIS",
+        "precio": 145000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762132856/zapa4_ohtq1u.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Zapatilla Drop Shot MEIRE 22",
+        "precio": 175000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762132855/zapa5_ipbl9s.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Zapatilla Drop Shot NIVA 22",
+        "precio": 175000,
+        "img": "https://res.cloudinary.com/dgrd1vhpw/image/upload/v1762132855/zapa6_z6nkza.webp"
+    }
+]

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palas</title>
+    <title>Accesorios</title>
     <style>
       body {
         opacity: 0;
@@ -22,10 +22,10 @@
         <a href="/index.html" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
           Inicio
         </a>
-        <a href="#productos" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
+        <a href="#grid-accesorios" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
           Nuestros productos
         </a>
-        <a href="#categoria" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
+        <a href="/index.html#categoria" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
           Categorías
         </a>
         <a href="#contacto" class="hover:text-primary duration-200 p-2 pb-1 border-b-2 border-transparent hover:border-primary transition-all">
@@ -50,13 +50,13 @@
 
       <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg fixed top-16 left-0 w-full z-40">
         <nav class="flex flex-col p-4">
-          <a href="" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
+          <a href="/index.html" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
             Inicio
           </a>
-          <a href="#productos" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
+          <a href="#grid-accesorios" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
             Nuestros productos
           </a>
-          <a href="#categoria" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
+          <a href="/index.html#categoria" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
             Categorías
           </a>
           <a href="#contacto" class="nav-link-mobile block py-3 px-4 text-lg text-gray-700 hover:bg-gray-100 rounded">
@@ -66,8 +66,95 @@
       </div>
     </header>
 
-    <main>
-        
+    <main class="pt-16">
+
+      <div class="flex items-center w-full max-w-lg mx-auto my-8">
+        <div class="flex-grow border-t border-gray-500"></div>
+        <h2 class="px-6 text-3xl font-bold text-gray-800 flex-shrink-0">
+         Accesorios
+        </h2>
+        <div class="flex-grow border-t border-gray-500"></div>
+      </div>
+
+      <!-- * CARRITO -->
+      <div id="cart-modal" 
+        class="hidden fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-lg flex flex-col z-50 transform transition-transform duration-300 ease-in-out">
+        <div class="flex justify-between items-center p-4 border-b">
+          <h2 class="text-2xl font-bold">Tu Carrito</h2>
+            <button id="close-cart-btn" class="text-gray-600 hover:text-gray-900 text-2xl" aria-label="Cerrar carrito">&times;</button>
+        </div>
+          
+        <div id="cart-items-container" class="flex-grow p-4 overflow-y-auto">
+        </div>
+          
+        <div class="p-4 border-t bg-gray-50">
+          <div class="flex justify-between items-center mb-4">
+            <span class="text-xl font-bold">Total:</span>
+            <span id="cart-total" class="text-xl font-bold">$0</span>
+          </div>
+          <button id="btn-finalizar-compra" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+            Finalizar Compra
+          </button>
+        </div>
+      </div>
+
+      <!-- * FINALIZAR COMPRA  -->
+      <div id="checkout-modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-lg shadow-lg flex flex-col overflow-hidden">
+          <div class="flex justify-between items-center p-4 border-b">
+            <h2 class="text-2xl font-bold">Realizar Pedido</h2>
+            <button id="btn-cancelar-checkout" class="text-gray-600 hover:text-gray-900 text-2xl" aria-label="Cerrar">&times;</button>
+          </div>
+          <form id="checkout-form" class="p-6 space-y-4">
+            
+            <div>
+              <label for="checkout-empresa" class="block text-sm font-medium text-gray-700">Nombre de Empresa</label>
+              <input type="text" id="checkout-empresa" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
+            </div>
+            
+            <div>
+              <label for="checkout-pago" class="block text-sm font-medium text-gray-700">Forma de Pago</label>
+              <select id="checkout-pago" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary">
+                <option value="">Selecciona una opción...</option>
+                <option value="Efectivo">Efectivo</option>
+                <option value="Transferencia">Transferencia</option>
+                <option value="Tarjeta de Crédito">A Crédito</option>
+              </select>
+            </div>
+
+            <div>
+              <p class="text-red-600 italic">*10% de descuento en Efectivo o Transferencia</p>
+            </div>
+
+            <div class="pt-4 flex gap-2">
+              <button id="btn-confirmar-pedido" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+                Enviar Pedido
+              </button>
+              <button type="button" id="btn-cancelar-pedido" class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-all">
+                Cancelar Pedido
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div id="success-modal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center max-w-sm w-full">
+          <svg class="w-16 h-16 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <h2 class="text-2xl font-bold mb-2">¡Pedido Recibido!</h2>
+          <p class="text-gray-600 mb-6">Gracias por tu compra</p>
+          
+          <button id="btn-cerrar-success" class="bg-primary text-white py-2 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-all">
+            Cerrar
+          </button>
+        </div>
+      </div>
+      
+      <!-- * GRILLA DE PRODUCTOS -->
+      <section id="grid-accesorios" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4 m-2"></section>
+
     </main>
 
     <footer>
@@ -94,12 +181,12 @@
                 <span>+54 3704 123456</span>
               </a>
 
-              <a href="" class="flex items-center gap-3 text-slate-300 hover:text-cyan-400 transition-colors duration-300">
+              <a href="mailto: leprimpadel@gmail.com" class="flex items-center gap-3 text-slate-300 hover:text-cyan-400 transition-colors duration-300">
                 <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
-                <span>LEPRIM@gmail.com</span>
+                <span>leprimpadel@gmail.com</span>
               </a>
             </div>
           </div>
@@ -125,6 +212,18 @@
     </footer>
 
 
+
     <script type="module" src="/src/main.js"></script>
+        <script type="module" src="/src/accesorios.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init({
+            publicKey: "a8mVOawSQcFYnQ1wA",
+          });
+      })();
+    </script>  
   </body>
 </html>
